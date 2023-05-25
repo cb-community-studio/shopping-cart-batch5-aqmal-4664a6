@@ -10,7 +10,7 @@
             username: { type: String, required: true, unique: true },
             email: { type: String, required: true, unique: true, lowercase: true },
             password: { type: String, required: true },
-            isAdmin: { type: Boolean, required: false, default: false },
+            isAdmin: { type: Boolean, required: true, default: false },
           }
           // ~cb-read-end~
           , 

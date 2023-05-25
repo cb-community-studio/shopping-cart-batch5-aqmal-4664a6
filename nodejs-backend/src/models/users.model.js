@@ -7,13 +7,11 @@
         const schema = new Schema(
           // ~cb-read-start~
           {
-       username: { type: String, required: true, unique: true },
-       email: { type: String, required: true, unique: true, lowercase: true },
-       password: { type: String, required: true },
-       isAdmin: { type: Boolean, required: false, default: false },
-       createdAt: { type: Date, required: true },
-
-    }
+            username: { type: String, required: true, unique: true },
+            email: { type: String, required: true, unique: true, lowercase: true },
+            password: { type: String, required: true },
+            isAdmin: { type: Boolean, required: false, default: false },
+          }
           // ~cb-read-end~
           , 
           {
